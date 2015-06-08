@@ -1,9 +1,10 @@
 #pragma once
 /*
+	FrameRate
 
-FrameRate算出クラス
-使用する場合は描画のとこでクラス型変数を作り、
-GetFrameRate関数を呼び出す
+	フレームレート算出クラス
+	使用する場合は描画のとこでクラス型変数を作り、
+	GetFrameRate関数を呼び出す
 
 */
 #pragma comment(lib,"winmm.lib")

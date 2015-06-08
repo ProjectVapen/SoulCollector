@@ -1,7 +1,7 @@
 #pragma once
 #include <windows.h>
 /*
-	CreateWindow.h
+	Window
 
 	ウィンドウ生成クラス
 

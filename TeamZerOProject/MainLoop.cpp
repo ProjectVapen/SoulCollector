@@ -57,7 +57,8 @@ LRESULT MainLoop::MsgProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam){
 	{
 
 	case WM_USER + 1:
-
+			
+		//•`‰æˆÈŠO‚Ìˆ—
 		InvalidateRect(hWnd, NULL, false);
 		break;
 
@@ -67,7 +68,7 @@ LRESULT MainLoop::MsgProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam){
 
 		frameRate.GetFrameRate();
 
-	
+		//•`‰æˆ—
 
 		EndPaint(hWnd, &m_ps);
 

@@ -6,8 +6,10 @@
 */
 class BattleEnemy
 {
-public:
-	BattleEnemy();
-	~BattleEnemy();
+	public:
+		BattleEnemy();
+		~BattleEnemy();
+
+		void Render();
 };
 

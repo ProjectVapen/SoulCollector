@@ -79,8 +79,7 @@
     <ClInclude Include="BattleMedium.h" />
     <ClInclude Include="BattlePlayer.h" />
     <ClInclude Include="Controller.h" />
-    <ClInclude Include="FrameRate.h" />
-    <ClInclude Include="MainLoop.h" />
+    <ClInclude Include="defineh.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="DataCard.h" />
     <ClInclude Include="DataEnemy.h" />
@@ -112,8 +111,7 @@
     <ClCompile Include="BattleMedium.cpp" />
     <ClCompile Include="BattlePlayer.cpp" />
     <ClCompile Include="Controller.cpp" />
-    <ClCompile Include="FrameRate.cpp" />
-    <ClCompile Include="MainLoop.cpp" />
+    <ClCompile Include="Entry.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="DataCard.cpp" />
     <ClCompile Include="DataEnemy.cpp" />
@@ -123,7 +121,6 @@
     <ClCompile Include="ManagementScene.cpp" />
     <ClCompile Include="ManagementStart.cpp" />
     <ClCompile Include="ManagementTitle.cpp" />
-    <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneBattle.cpp" />
     <ClCompile Include="SceneStart.cpp" />
     <ClCompile Include="SceneTitle.cpp" />

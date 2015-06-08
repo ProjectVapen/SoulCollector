@@ -8,8 +8,10 @@
 class SceneStart :
 	public SceneBase
 {
-public:
-	SceneStart();
-	~SceneStart();
+	public:
+		SceneStart();
+		~SceneStart();
+
+		void Render()override;
 };
 

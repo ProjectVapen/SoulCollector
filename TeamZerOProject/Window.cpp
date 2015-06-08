@@ -1,14 +1,23 @@
 #include "Window.h"
-#include "MainLoop.h"
-extern MainLoop mainLoop;
-extern LRESULT CALLBACK WndProc(HWND hWnd, UINT Msg, WPARAM wParam, LPARAM lParam);
+#include "Application.h"
+
 Window::Window() :
-_windowWidth(1280),
-_windowHeight(720),
-_appName("Test")
+m_windowWidth(1280),
+m_windowHeight(720),
+m_appName("Test")
 {
+
 }
 
+Window g_windowMain;//インスタンス化
+
+
+LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+
+LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+{
+	return g_windowMain.m_pWindow->MsgProc(hWnd, uMsg, wParam, lParam);
+}
 
 Window::~Window()
 {
@@ -17,6 +26,8 @@ Window::~Window()
 HRESULT Window::InitWindow(HINSTANCE hInstance,
 	INT iX, INT iY, INT iWidth, INT iHeight, LPCSTR WindowName)
 {
+	g_windowMain.m_pWindow = std::make_unique<Window>();
+
 	WNDCLASSEX wc;
 
 	SecureZeroMemory(&wc, sizeof(wc));
@@ -36,34 +47,56 @@ HRESULT Window::InitWindow(HINSTANCE hInstance,
 	RegisterClassEx(&wc);
 
 
-	w_hWnd = CreateWindow(WindowName, WindowName,
+	m_hWnd = CreateWindow(WindowName, WindowName,
 		WS_OVERLAPPEDWINDOW | WS_VISIBLE, 0, 0,
 		iWidth + 10 + GetSystemMetrics(SM_CXDLGFRAME) * 2,
 		iHeight + 10 + GetSystemMetrics(SM_CXDLGFRAME) * 2 + GetSystemMetrics(SM_CYCAPTION),
 		NULL, NULL,
 		hInstance, NULL);
-	mainLoop.Hwnd(w_hWnd);
-	if (!mainLoop.Hdc())
+
+	if (!m_hWnd)
 	{
 		return E_FAIL;
 	}
 
-	ShowWindow(mainLoop.Hwnd(), SW_SHOW);
-	UpdateWindow(mainLoop.Hwnd());
-
+	//ウインドウの表示
+	ShowWindow(m_hWnd, SW_SHOW);
+	UpdateWindow(m_hWnd);
+	
 	return S_OK;
 }
 
-
+LRESULT Window::MsgProc(HWND hWnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
+{
+	switch (iMsg)
+	{
+	case WM_KEYDOWN:
+		switch ((char)wParam)
+		{
+		case VK_ESCAPE:
+			PostQuitMessage(0);
+			break;
+		}
+		break;
+	case WM_DESTROY:
+		PostQuitMessage(0);
+		break;
+	}
+	return DefWindowProc(hWnd, iMsg, wParam, lParam);
+}
 
 int Window::WindowWidth()const{
-	return  _windowWidth;
+	return  m_windowWidth;
 }
 
 int Window::WindowHeight()const{
-	return  _windowHeight;
+	return  m_windowHeight;
 }
 
 LPCSTR Window::AppName()const{
-	return  _appName;
+	return  m_appName;
+}
+
+HWND Window::hWND(){
+	return m_hWnd;
 }

@@ -6,8 +6,10 @@
 */
 class BattlePlayer
 {
-public:
-	BattlePlayer();
-	~BattlePlayer();
+	public:
+		BattlePlayer();
+		~BattlePlayer();
+
+		void Render();
 };
 

@@ -1,8 +1,11 @@
 #include "AppManager.h"
 
 
-AppManager::AppManager()
-{
+AppManager::AppManager(){
+	m_pManageBattle = nullptr;
+	m_pManageScene  = nullptr;
+	m_pManageStart  = nullptr;
+	m_pManageTitle  = nullptr;
 }
 
 

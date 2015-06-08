@@ -9,8 +9,10 @@
 class SceneTitle :
 	public SceneBase
 {
-public:
-	SceneTitle();
-	~SceneTitle();
+	public:
+		SceneTitle();
+		~SceneTitle();
+
+		void Render()override;
 };
 

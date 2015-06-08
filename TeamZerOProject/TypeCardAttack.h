@@ -6,12 +6,21 @@
 
 	Šî’êƒNƒ‰ƒX:TypeCardAttack
 */
+typedef enum _ECard{
+	eAttack,
+	eDefense,
+	eMagic
+}eCard;
+
 #include "TypeCardBase.h"
 class TypeCardAttack :
 	public TypeCardBase
 {
-public:
-	TypeCardAttack();
-	~TypeCardAttack();
+	protected:
+		eCard Card;
+
+	public:
+		TypeCardAttack();
+		~TypeCardAttack();
 };
 

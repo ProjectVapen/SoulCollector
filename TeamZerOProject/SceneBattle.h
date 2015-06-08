@@ -8,8 +8,10 @@
 class SceneBattle :
 	public SceneBase
 {
-public:
-	SceneBattle();
-	~SceneBattle();
+	public:
+		SceneBattle();
+		~SceneBattle();
+
+		void Render()override;
 };
 

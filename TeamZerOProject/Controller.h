@@ -6,8 +6,8 @@
 */
 class Controller
 {
-public:
-	Controller();
-	~Controller();
+	public:
+		Controller();
+		~Controller();
 };
 

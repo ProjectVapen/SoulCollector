@@ -5,10 +5,20 @@
 	‘®«î•ñŠî’êƒNƒ‰ƒX
 
 */
+
+typedef enum _EAttribute{
+	eFire,
+	eWater,
+	eWind
+}eAttribute;
 class TypeAttributeBase
 {
-public:
-	TypeAttributeBase();
-	~TypeAttributeBase();
+	protected:
+		
+		eAttribute Attribute;
+
+	public:
+		TypeAttributeBase();
+		~TypeAttributeBase();
 };
 

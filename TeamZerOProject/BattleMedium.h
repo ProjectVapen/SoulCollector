@@ -7,8 +7,10 @@
 */
 class BattleMedium
 {
-public:
-	BattleMedium();
-	~BattleMedium();
+	public:
+		BattleMedium();
+		~BattleMedium();
+
+		void Render();
 };
 

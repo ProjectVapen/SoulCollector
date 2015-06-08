@@ -10,8 +10,10 @@
 class TypeAttributeFire :
 	public TypeAttributeBase
 {
-public:
-	TypeAttributeFire();
-	~TypeAttributeFire();
+
+
+	public:
+		TypeAttributeFire();
+		~TypeAttributeFire();
 };
 

@@ -7,8 +7,10 @@
 */
 class SceneBase
 {
-public:
-	SceneBase();
-	~SceneBase();
+	public:
+		virtual ~SceneBase() = default;
+
+		virtual void  Render() = 0;
+
 };
 

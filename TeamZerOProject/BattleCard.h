@@ -7,8 +7,11 @@
 */
 class BattleCard
 {
-public:
-	BattleCard();
-	~BattleCard();
+	public:
+		
+		BattleCard();
+		~BattleCard();
+		void Render();
+
 };
 

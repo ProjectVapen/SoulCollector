@@ -9,3 +9,7 @@ SceneStart::SceneStart()
 SceneStart::~SceneStart()
 {
 }
+
+void SceneStart::Render(){
+
+}

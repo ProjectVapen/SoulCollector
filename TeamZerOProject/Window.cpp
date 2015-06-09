@@ -4,7 +4,7 @@
 Window::Window() :
 m_windowWidth(1280),
 m_windowHeight(720),
-m_appName("Test")
+m_appName("SoulCollector")
 {
 
 }

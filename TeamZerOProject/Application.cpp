@@ -1,12 +1,15 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include "Application.h"
-#include "defineh.h"
 #include <string.h>
+#include <d3d11.h>
+#include <d3dx10.h>
+#include <d3dx11.h>
+#include <d3dCompiler.h>
 Application::Application(){
 
 	SecureZeroMemory(this, sizeof(Application));
-	RootPath[1024] = { 0 };
+
 	m_pAppData = std::make_unique<AppData>();
 	m_pAppManager = std::make_unique<AppManager>();
 	m_pWindow = std::make_unique<Window>();
@@ -49,11 +52,6 @@ void Application::Run(HINSTANCE hInstance){
 	}
 
 }
-
-void Application::InitDirectory(char* root){
-	strcpy(RootPath, root);
-}
-
 HRESULT Application::Init(){
 	m_pWindow = std::make_unique<Window>();
 
@@ -66,9 +64,12 @@ HRESULT Application::Init(){
 
 	m_hWnd = m_pWindow->hWND();
 
+
 	return 0;
 }
 
 void Application::AppMainLoop(){
+
+	//【アプリケーション処理はここから！】＼_(・ω・`)ココ重要！
 
 }

@@ -1,70 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph GraphDirection="BottomToTop" Layout="Sugiyama" ZoomLevel="-1" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="AppData" Bounds="753.351666666667,225.72432,70.1833333333334,25.24" Label="AppData" />
-    <Node Id="AppManager" Bounds="337.841666666667,225.72432,93.2033333333334,25.24" Label="AppManager" />
-    <Node Id="Application" Bounds="291.799963773334,40,84.0049381866667,25.24216" Label="Application" />
-    <Node Id="Battle" Bounds="136.871666666667,336.20432,241.143333333333,195.72" Group="Expanded" Label="Battle" />
-    <Node Id="BattleCard" Bounds="156.871666666667,376.20432,81.3866666666668,25.24" Label="BattleCard" />
-    <Node Id="BattleEnemy" Bounds="156.871666666667,431.44432,94.0533333333333,25.24" Label="BattleEnemy" />
-    <Node Id="BattleMedium" Bounds="156.871666666667,486.68432,100.27,25.24" Label="BattleMedium" />
-    <Node Id="BattlePlayer" Bounds="268.258333333334,376.20432,89.7566666666667,25.24" Label="BattlePlayer" />
-    <Node Id="Controller" Bounds="291.799963773334,150.48432,77.22,25.24" Label="Controller" />
-    <Node Id="CreateWindow" Bounds="291.799963773334,95.24216,105.28673912,25.24216" Label="CreateWindow" />
-    <Node Id="DataCard" Bounds="860.075,280.96432,74.7366666666667,25.24" Label="DataCard" />
-    <Node Id="DataEnemy" Bounds="628.741666666667,280.96432,87.4033333333332,25.24" Label="DataEnemy" />
-    <Node Id="DataMedium" Bounds="965.633333333334,280.96432,93.6199999999999,25.24" Label="DataMedium" />
-    <Node Id="DataPlayer" Bounds="746.89,280.96432,83.1066666666666,25.24" Label="DataPlayer" />
-    <Node Id="Loop" Bounds="427.086702893334,95.24216,50,25.24" Label="Loop" />
-    <Node Id="Main" Bounds="271.799963773334,0,225.28673912,195.72432" Group="Expanded" Label="main" />
-    <Node Id="ManagementBattle" Bounds="161.435,280.96432,130.016666666667,25.24" Label="ManagementBattle" />
-    <Node Id="ManagementScene" Bounds="5.6843418860808E-14,280.96432,130.886666666667,25.24" Label="ManagementScene" />
-    <Node Id="ManagementStart" Bounds="322.086666666667,280.96432,124.713333333333,25.24" />
-    <Node Id="ManagementTitle" Bounds="476.886666666667,280.96432,121.113333333333,25.24" Label="ManagementTitle" />
-    <Node Id="Scene" Bounds="112.43,561.92432,82.9066666666668,25.2399999999999" Label="SceneBase" />
-    <Node Id="SceneBase" Bounds="24.0395233666084,421.44431971105,82.8076199334505,25.2400005779004" Label="SceneBase" />
-    <Node Id="SceneBattle" Bounds="224.348333333333,617.16432,89.0700000000002,25.24" Label="SceneBattle" />
-    <Node Id="SceneStart" Bounds="0,617.16432,83.7666666666667,25.24" />
-    <Node Id="SceneTitle" Bounds="114.208333333333,617.16432,79.3499999999999,25.24" Label="SceneTitle" />
-    <Node Id="TypeAttributeBase" Bounds="161.448333333333,672.40432,126.793333333333,25.2400000000001" Label="TypeAttributeBase" />
-    <Node Id="TypeAttributeFire" Bounds="164.523333333334,727.64432,120.643333333333,25.24" Label="TypeAttributeFire" />
-    <Node Id="TypeAttributeWater" Bounds="0,727.64432,133.69,25.24" Label="TypeAttributeWater" />
-    <Node Id="TypeAttributeWind" Bounds="315.526666666667,727.64432,128.636666666667,25.24" Label="TypeAttributeWind" />
-    <Node Id="TypeCardAttack" Bounds="495.786666666666,617.16432,111.61,25.24" Label="TypeCardAttack" />
-    <Node Id="TypeCardBase" Bounds="500.208333333333,561.92432,102.766666666667,25.2400000000001" Label="TypeCardBase" />
-    <Node Id="TypeCardDiffence" Bounds="343.418333333334,617.16432,122.346666666666,25.24" Label="TypeCardDiffence" />
-    <Node Id="TypeCardMagic" Bounds="637.506666666666,617.16432,108.17,25.24" Label="TypeCardMagic" />
+    <Node Id="AppData" Bounds="753.351666666667,225.72216,70.1833333333334,25.24" Label="AppData" />
+    <Node Id="AppManager" Bounds="335.841666666667,225.72216,93.2033333333334,25.24" Label="AppManager" />
+    <Node Id="Application" Bounds="255.578333333334,40,84.0049381866668,25.24216" Label="Application" />
+    <Node Id="Application1" Bounds="918.133333333333,617.16216,84.0066666666667,25.24" Label="Application" />
+    <Node Id="Battle" Bounds="136.871666666667,336.20216,241.143333333333,195.72" Group="Expanded" Label="Battle" />
+    <Node Id="BattleCard" Bounds="156.871666666667,376.20216,81.3866666666668,25.24" Label="BattleCard" />
+    <Node Id="BattleEnemy" Bounds="156.871666666667,431.44216,94.0533333333333,25.24" Label="BattleEnemy" />
+    <Node Id="BattleMedium" Bounds="156.871666666667,486.68216,100.27,25.24" Label="BattleMedium" />
+    <Node Id="BattlePlayer" Bounds="268.258333333334,376.20216,89.7566666666667,25.24" Label="BattlePlayer" />
+    <Node Id="Camera" Bounds="1032.52833333333,617.16216,65.2166666666667,25.24" />
+    <Node Id="Camera1" Bounds="336.871666666667,95.24216,65.2166666666667,25.24" Label="Camera" />
+    <Node Id="Controller" Bounds="432.088333333334,95.24216,77.2200000000001,25.24" Label="Controller" />
+    <Node Id="CreateWindow" Bounds="369.58327152,40,105.28673912,25.24216" Label="CreateWindow" />
+    <Node Id="DataCard" Bounds="984.075,280.96216,74.7366666666667,25.24" Label="DataCard" />
+    <Node Id="DataEnemy" Bounds="865.741666666667,280.96216,87.4033333333332,25.24" Label="DataEnemy" />
+    <Node Id="DataMedium" Bounds="741.633333333334,280.96216,93.6199999999999,25.24" Label="DataMedium" />
+    <Node Id="DataPlayer" Bounds="627.89,280.96216,83.1066666666666,25.24" Label="DataPlayer" />
+    <Node Id="DirectBase" Bounds="255.578333333334,150.48216,105.213333333333,25.24" Label="DirectAppBase" />
+    <Node Id="DirectBase1" Bounds="907.53,561.92216,105.213333333333,25.24" Label="DirectAppBase" />
+    <Node Id="Loop" Bounds="255.578333333334,95.24216,51.2933333333333,25.24" Label="Entry" />
+    <Node Id="Main" Bounds="235.578333333334,0,293.73,195.72216" Group="Expanded" Label="main" />
+    <Node Id="ManagementBattle" Bounds="161.435,280.96216,130.016666666667,25.24" Label="ManagementBattle" />
+    <Node Id="ManagementScene" Bounds="5.6843418860808E-14,280.96216,130.886666666667,25.24" Label="ManagementScene" />
+    <Node Id="ManagementStart" Bounds="473.086666666667,280.96216,124.713333333333,25.24" />
+    <Node Id="ManagementTitle" Bounds="321.886666666667,280.96216,121.113333333333,25.24" Label="ManagementTitle" />
+    <Node Id="Scene" Bounds="110.221666666667,672.40216,82.9066666666668,25.2399999999998" Label="SceneBase" />
+    <Node Id="SceneBase" Bounds="24.0395233666083,421.44215971105,82.8076199334505,25.2400005779004" Label="SceneBase" />
+    <Node Id="SceneBattle" Bounds="224.14,727.64216,89.0700000000002,25.24" Label="SceneBattle" />
+    <Node Id="SceneStart" Bounds="109.791666666667,727.64216,83.7666666666667,25.24" />
+    <Node Id="SceneTitle" Bounds="7.105427357601E-15,727.64216,79.3499999999999,25.24" Label="SceneTitle" />
+    <Node Id="TypeAttributeBase" Bounds="595.811666666667,561.92216,126.793333333333,25.2400000000002" Label="TypeAttributeBase" />
+    <Node Id="TypeAttributeFire" Bounds="756.886666666667,617.16216,120.643333333333,25.24" Label="TypeAttributeFire" />
+    <Node Id="TypeAttributeWater" Bounds="592.363333333333,617.16216,133.69,25.24" Label="TypeAttributeWater" />
+    <Node Id="TypeAttributeWind" Bounds="432.89,617.16216,128.636666666667,25.24" Label="TypeAttributeWind" />
+    <Node Id="TypeCardAttack" Bounds="291.28,617.16216,111.61,25.24" Label="TypeCardAttack" />
+    <Node Id="TypeCardBase" Bounds="148.701666666666,561.92216,102.766666666667,25.2400000000002" Label="TypeCardBase" />
+    <Node Id="TypeCardDiffence" Bounds="138.911666666667,617.16216,122.346666666666,25.24" Label="TypeCardDiffence" />
+    <Node Id="TypeCardMagic" Bounds="-2.1316282072803E-14,617.16216,108.17,25.24" Label="TypeCardMagic" />
   </Nodes>
   <Links>
     <Link Source="AppData" Target="Application" Bounds="164.954544096606,-225.062478156758,510.334616356245,395.542478156758" />
     <Link Source="AppManager" Target="Application" Bounds="155.495777706052,-223.184887161056,274.28300044427,393.664887161056" />
+    <Link Source="Application1" Target="DirectBase1" Bounds="960.136657714844,596.162170410156,0,21" />
     <Link Source="Battle" Target="BattleCard" Category="Contains" />
     <Link Source="Battle" Target="BattleEnemy" Category="Contains" />
     <Link Source="Battle" Target="BattleMedium" Category="Contains" />
     <Link Source="Battle" Target="BattlePlayer" Category="Contains" />
-    <Link Source="Battle" Target="ManagementBattle" Bounds="231.167602539063,314.992889404297,4.68077087402344,21.21142578125" />
-    <Link Source="DataCard" Target="AppData" Bounds="821.373168945313,255.032791137695,51.1682739257813,25.9315338134766" />
-    <Link Source="DataEnemy" Target="AppData" Bounds="698.944396972656,254.833831787109,54.8721313476563,26.1304931640625" />
-    <Link Source="DataMedium" Target="AppData" Bounds="832.273193359375,249.153076171875,133.944885253906,33.0317687988281" />
-    <Link Source="DataPlayer" Target="AppData" Bounds="788.443359375,259.964324951172,0,21" />
+    <Link Source="Battle" Target="ManagementBattle" Bounds="231.167602539063,314.99072265625,4.68077087402344,21.21142578125" />
+    <Link Source="Camera" Target="DirectBase1" Bounds="992.089721679688,591.352478027344,49.058837890625,25.8096923828125" />
+    <Link Source="DataCard" Target="AppData" Bounds="832.292236328125,248.737930297852,151.782775878906,35.9848785400391" />
+    <Link Source="DataEnemy" Target="AppData" Bounds="824.273864746094,254.699844360352,57.526123046875,26.2623138427734" />
+    <Link Source="DataMedium" Target="AppData" Bounds="788.443359375,259.962158203125,0,21" />
+    <Link Source="DataPlayer" Target="AppData" Bounds="696.629821777344,254.751602172852,56.4636840820313,26.2105560302734" />
     <Link Source="Main" Target="Application" Category="Contains" />
+    <Link Source="Main" Target="Camera1" Category="Contains" />
     <Link Source="Main" Target="Controller" Category="Contains" />
     <Link Source="Main" Target="CreateWindow" Category="Contains" />
-    <Link Source="Main" Target="Loop" Category="Contains" />
-    <Link Source="ManagementBattle" Target="AppManager" Bounds="262.539642333984,253.934600830078,77.3116455078125,27.0297241210938" />
-    <Link Source="ManagementScene" Target="AppManager" Bounds="130.405685424805,247.949798583984,198.567947387695,34.38525390625" />
-    <Link Source="ManagementStart" Target="AppManager" Bounds="384.443328857422,259.964324951172,0,21" />
-    <Link Source="ManagementTitle" Target="AppManager" Bounds="427.862518310547,254.020629882813,74.6268005371094,26.9436950683594" />
-    <Link Source="SceneBase" Target="ManagementScene" Bounds="65.4433364868164,315.204315185547,0,106.239990234375" />
-    <Link Source="SceneBattle" Target="Scene" Bounds="188.268569946289,591.061218261719,54.3421325683594,26.1030883789063" />
-    <Link Source="SceneStart" Target="Scene" Bounds="67.470588684082,591.145385742188,52.7538528442383,26.0189208984375" />
-    <Link Source="SceneTitle" Target="Scene" Bounds="153.883331298828,596.164306640625,0,21" />
-    <Link Source="TypeAttributeFire" Target="TypeAttributeBase" Bounds="224.845001220703,706.644348144531,0,21" />
-    <Link Source="TypeAttributeWater" Target="TypeAttributeBase" Bounds="102.941307067871,700.614624023438,77.311653137207,27.0297241210938" />
-    <Link Source="TypeAttributeWind" Target="TypeAttributeBase" Bounds="268.733642578125,700.665649414063,75.7004089355469,26.9786987304688" />
-    <Link Source="TypeCardAttack" Target="TypeCardBase" Bounds="551.591674804688,596.164306640625,0,21" />
-    <Link Source="TypeCardDiffence" Target="TypeCardBase" Bounds="438.174926757813,590.330200195313,71.4086608886719,26.8341064453125" />
-    <Link Source="TypeCardMagic" Target="TypeCardBase" Bounds="591.947631835938,590.467590332031,67.6599731445313,26.6967163085938" />
+    <Link Source="Main" Target="DirectBase" Category="Contains" />
+    <Link Source="Main" Target="Loop" Category="Contains" Bounds="382.443333333334,34.24,5.6843418860808E-14,21" />
+    <Link Source="ManagementBattle" Target="AppManager" Bounds="262.082733154297,253.96630859375,76.2373962402344,26.995849609375" />
+    <Link Source="ManagementScene" Target="AppManager" Bounds="130.363388061523,248.007949829102,196.611892700195,34.2613372802734" />
+    <Link Source="ManagementStart" Target="AppManager" Bounds="425.862518310547,254.018463134766,74.6268005371094,26.9436950683594" />
+    <Link Source="ManagementTitle" Target="AppManager" Bounds="382.443328857422,259.962158203125,0,21" />
+    <Link Source="SceneBase" Target="ManagementScene" Bounds="65.4433364868164,315.2021484375,0,106.240020751953" />
+    <Link Source="SceneBattle" Target="Scene" Bounds="186.543045043945,701.484619140625,55.4024047851563,26.1575317382813" />
+    <Link Source="SceneStart" Target="Scene" Bounds="151.675003051758,706.642150878906,0,21" />
+    <Link Source="SceneTitle" Target="Scene" Bounds="65.2622528076172,701.623229980469,52.7538604736328,26.0189208984375" />
+    <Link Source="TypeAttributeFire" Target="TypeAttributeBase" Bounds="703.800354003906,590.132446289063,77.3116455078125,27.0297241210938" />
+    <Link Source="TypeAttributeWater" Target="TypeAttributeBase" Bounds="659.208312988281,596.162170410156,0,21" />
+    <Link Source="TypeAttributeWind" Target="TypeAttributeBase" Bounds="534.218444824219,590.066833496094,79.4613647460938,27.0953369140625" />
+    <Link Source="TypeCardAttack" Target="TypeCardBase" Bounds="242.093063354492,590.328063964844,71.4086761474609,26.8341064453125" />
+    <Link Source="TypeCardDiffence" Target="TypeCardBase" Bounds="200.085006713867,596.162170410156,0,21" />
+    <Link Source="TypeCardMagic" Target="TypeCardBase" Bounds="87.439811706543,590.347045898438,70.8727340698242,26.8151245117188" />
   </Links>
   <Categories>
     <Category Id="Contains" Label="内容" Description="リンクのソースにターゲット オブジェクトが含まれているかどうか" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="含まれる" IsContainment="True" OutgoingActionLabel="含む" />

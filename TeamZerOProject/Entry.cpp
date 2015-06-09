@@ -13,6 +13,7 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, INT){
 		MessageBox(0, "Application¶¬Ž¸”s!ƒAƒvƒŠ‚ðI—¹‚µ‚Ü‚·", NULL, MB_OK);
 		return 0;
 	}
+
 	app->Run(hInstance);
 
 	return 0;

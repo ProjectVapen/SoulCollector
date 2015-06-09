@@ -2,22 +2,25 @@
 /*
 	Application
 
-	実際のメインループ処理
-	実際のゲーム処理などを行う
+	メインループ処理
+	ゲーム処理などを行う
+	ゲーム全体の管理役
 */
 #include "AppData.h"
 #include "AppManager.h"
 #include "Controller.h"
 #include "Window.h"
+#include "DirectAppBase.h"
 #include <memory>
 #include <windows.h>
-class Application
+class Application:
+	public DirectAppBase
 {
 	private:
 
 		HINSTANCE m_hInstance;
 		HWND m_hWnd;
-		char RootPath[1124];
+		
 	public:
 		Application();
 		~Application();
@@ -30,7 +33,6 @@ class Application
 		HRESULT Init();
 		void Run(HINSTANCE);
 		void AppMainLoop();
-		void InitDirectory(char* root);
 
 };
 

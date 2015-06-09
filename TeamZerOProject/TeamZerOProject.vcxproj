@@ -78,8 +78,10 @@
     <ClInclude Include="BattleEnemy.h" />
     <ClInclude Include="BattleMedium.h" />
     <ClInclude Include="BattlePlayer.h" />
+    <ClInclude Include="Camera.h" />
     <ClInclude Include="Controller.h" />
-    <ClInclude Include="defineh.h" />
+    <ClInclude Include="DirectAppBase.h" />
+    <ClInclude Include="MyDirect3D.h" />
     <ClInclude Include="Window.h" />
     <ClInclude Include="DataCard.h" />
     <ClInclude Include="DataEnemy.h" />
@@ -110,8 +112,11 @@
     <ClCompile Include="BattleEnemy.cpp" />
     <ClCompile Include="BattleMedium.cpp" />
     <ClCompile Include="BattlePlayer.cpp" />
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="DirectAppBase.cpp" />
     <ClCompile Include="Entry.cpp" />
+    <ClCompile Include="MyDirect3D.cpp" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="DataCard.cpp" />
     <ClCompile Include="DataEnemy.cpp" />

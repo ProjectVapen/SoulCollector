@@ -46,11 +46,13 @@ HRESULT Window::InitWindow(HINSTANCE hInstance,
 
 	RegisterClassEx(&wc);
 
+	//DirectX‚Ì•`‰æ—Ìˆæ‚ðŽw’è
+	RECT rect = { 0, 0, m_windowWidth, m_windowHeight };
 
 	m_hWnd = CreateWindow(WindowName, WindowName,
-		WS_OVERLAPPEDWINDOW | WS_VISIBLE, 0, 0,
-		iWidth + 10 + GetSystemMetrics(SM_CXDLGFRAME) * 2,
-		iHeight + 10 + GetSystemMetrics(SM_CXDLGFRAME) * 2 + GetSystemMetrics(SM_CYCAPTION),
+		WS_OVERLAPPEDWINDOW | WS_VISIBLE, 
+		CW_USEDEFAULT, CW_USEDEFAULT,
+		rect.right -rect.left,rect.bottom-rect.top,
 		NULL, NULL,
 		hInstance, NULL);
 
